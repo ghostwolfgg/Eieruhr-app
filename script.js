@@ -2,7 +2,7 @@ let alarm = new Audio('alarm.mp3');
 let timerStarted = false;
 
 
-function startTimer() {
+document.querySelector("img").onclick = () => {
     if (!timerStarted) {
         let startTime = new Date().getTime();
         let fiveMinutes = 1000 * 60 * 5;
